@@ -150,7 +150,7 @@ ask_me_about:
 
 <!-- Self-hosted so no third-party quota can break it. GitHub strips JS from
      READMEs, so this is a looping CSS animation, not visit-triggered. -->
-<img width="70%" src="https://raw.githubusercontent.com/Priyasaha7/Priyasaha7/main/assets/confetti.svg" alt="confetti" />
+<img width="360" src="https://raw.githubusercontent.com/Priyasaha7/Priyasaha7/main/assets/confetti.svg" alt="confetti" />
 
 ### 🤝 Connect
 
