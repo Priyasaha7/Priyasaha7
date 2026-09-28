@@ -114,8 +114,11 @@ ask_me_about:
 
 ## ⏰ When I Actually Commit
 
+<!-- GitHub-native palette on a transparent canvas so it blends with the page
+     in both dark and light themes, like the Featured Projects table. -->
+
 <div align="center">
-  <img width="62%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Priyasaha7&theme=rose_pine&utcOffset=5.5&bg_color=1B1B1B&title_color=EBBCBA&text_color=E3D4D8&border_color=3E2A35&icon_color=EBBCBA&chart_color=6E4B4F" alt="productive time" />
+  <img width="62%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Priyasaha7&theme=github_dark&utcOffset=5.5&bg_color=00000000&title_color=58A6FF&text_color=8B949E&border_color=30363D&icon_color=8B949E&chart_color=1F6FEB" alt="productive time" />
 </div>
 
 ---
@@ -139,14 +142,6 @@ ask_me_about:
 
 <div align="center">
   <img width="62%" src="https://streak-stats.demolab.com?user=Priyasaha7&hide_border=true&border_radius=12&background=191724&ring=EBBCBA&fire=6E4B4F&currStreakLabel=EBBCBA&currStreakNum=F2E9E4&sideLabels=7D6B75&sideNums=F2E9E4&dates=6E6A86" alt="streak" />
-</div>
-
----
-
-## 🌱 Contribution Grid
-
-<div align="center">
-  <img width="92%" src="https://ghchart.rshah.org/EBBCBA/Priyasaha7" alt="contribution grid" />
 </div>
 
 ---
