@@ -3,8 +3,10 @@
     Appends a dated entry to a log file, then commits and pushes it.
 
 .DESCRIPTION
-    Meant to be run once per day by Task Scheduler. Uses whatever credential
-    helper / SSH key git is already configured with -- no passwords in here.
+    Meant to be run once per day by Task Scheduler. Reads GITHUB_USERNAME and
+    GITHUB_TOKEN from a gitignored .env file; falls back to git's own credential
+    helper when .env is absent. GitHub does not accept account passwords for git
+    operations, so GITHUB_TOKEN must be a Personal Access Token.
 
 .PARAMETER RepoPath
     Path to the git repository. Defaults to the repo this script lives in.
@@ -33,9 +35,27 @@ function Write-Log {
     Add-Content -Path (Join-Path $logDir 'daily-commit.log') -Value $line -Encoding UTF8
 }
 
+function Import-DotEnv {
+    param([string]$Path)
+    $values = @{}
+    if (-not (Test-Path $Path)) { return $values }
+    foreach ($line in Get-Content -Path $Path -Encoding UTF8) {
+        $trimmed = $line.Trim()
+        if (-not $trimmed -or $trimmed.StartsWith('#')) { continue }
+        $split = $trimmed.IndexOf('=')
+        if ($split -lt 1) { continue }
+        $key = $trimmed.Substring(0, $split).Trim()
+        $value = $trimmed.Substring($split + 1).Trim().Trim('"', "'")
+        $values[$key] = $value
+    }
+    return $values
+}
+
 if (-not (Test-Path (Join-Path $RepoPath '.git'))) {
     throw "No git repository found at '$RepoPath'."
 }
+
+$env_ = Import-DotEnv -Path (Join-Path $RepoPath '.env')
 
 Push-Location $RepoPath
 try {
@@ -64,7 +84,13 @@ try {
         exit 0
     }
 
-    git commit -m "chore: daily activity log for $today" | Out-Null
+    $commitArgs = @()
+    if ($env_['GIT_AUTHOR_NAME'] -and $env_['GIT_AUTHOR_EMAIL']) {
+        $commitArgs += @('-c', "user.name=$($env_['GIT_AUTHOR_NAME'])")
+        $commitArgs += @('-c', "user.email=$($env_['GIT_AUTHOR_EMAIL'])")
+    }
+
+    git @commitArgs commit -m "chore: daily activity log for $today" | Out-Null
     Write-Log "Committed entry for $today on branch '$Branch'."
 
     if ($NoPush) {
@@ -72,7 +98,30 @@ try {
         exit 0
     }
 
-    git push origin $Branch
+    $token = $env_['GITHUB_TOKEN']
+    $user  = $env_['GITHUB_USERNAME']
+
+    if ($token -and $token -ne 'github_pat_replace_me' -and $user) {
+        if ($token -notmatch '^(gh[pousr]_|github_pat_)') {
+            Write-Log 'GITHUB_TOKEN does not look like a Personal Access Token. GitHub rejects account passwords for git operations; create a token at https://github.com/settings/tokens' 'ERROR'
+            exit 1
+        }
+        $remote = (git remote get-url origin).Trim()
+        if ($remote -notmatch '^https://github\.com/(.+?)(?:\.git)?$') {
+            Write-Log "Token auth needs an https github.com remote, but origin is '$remote'." 'ERROR'
+            exit 1
+        }
+        # Kept inline so the token is never written to .git/config.
+        $authUrl = "https://$([uri]::EscapeDataString($user)):$([uri]::EscapeDataString($token))@github.com/$($Matches[1]).git"
+        git push $authUrl "HEAD:$Branch" --quiet 2>&1 |
+            ForEach-Object { $_ -replace [regex]::Escape($token), '***' } |
+            ForEach-Object { Write-Log $_ }
+    }
+    else {
+        Write-Log 'No token in .env; using git credential helper.'
+        git push origin $Branch
+    }
+
     if ($LASTEXITCODE -ne 0) {
         Write-Log "Push to origin/$Branch failed with exit code $LASTEXITCODE." 'ERROR'
         exit $LASTEXITCODE

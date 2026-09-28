@@ -1,4 +1,4 @@
-# GithubAutomate
+# Github_Automation
 
 Daily activity commits plus a styled GitHub profile README.
 
@@ -10,27 +10,49 @@ Your password was exposed in plain text. Before anything else:
 2. Enable two-factor authentication
 3. https://github.com/settings/tokens -> revoke anything you don't recognise
 
-Nothing in this repo needs your password. Authentication uses either your
-existing Git Credential Manager login, an SSH key, or a fine-grained
-Personal Access Token.
+Nothing in this repo needs your password. GitHub removed password
+authentication for Git operations in August 2021 — an account password will be
+rejected outright. Authentication uses a Personal Access Token.
 
-## 2. Push this repo
+## 2. Create your .env
+
+```powershell
+Copy-Item .env.example .env
+notepad .env
+```
+
+Get a token at https://github.com/settings/tokens -> **Fine-grained tokens** ->
+*Generate new token*. Scope it to just this repository and grant
+**Contents: Read and write**. Nothing else. Paste it as `GITHUB_TOKEN`.
+
+`.env` is gitignored, so it will not be committed. Verify any time with:
+
+```powershell
+git check-ignore -v .env      # prints a .gitignore rule = safely ignored
+```
+
+A token is safer than a password: it is scoped to one repo, it expires, and you
+can revoke it without changing your login. If you set an expiry, the daily push
+will start failing when it lapses — check `logs/daily-commit.log` and issue a
+new token.
+
+## 3. Push this repo
+
+The repo is already initialised with a `main` branch and a first commit. Create
+an empty `Github_Automation` repo on GitHub (no README, no .gitignore), then:
 
 ```powershell
 cd d:\GithubAutomate
-git init
 git add .
-git commit -m "chore: initial commit"
-git branch -M main
-git remote add origin https://github.com/Priyasaha7/GithubAutomate.git
+git commit -m "feat: token auth via .env"
+git remote add origin https://github.com/Priyasaha7/Github_Automation.git
 git push -u origin main
 ```
 
-Create the empty `GithubAutomate` repo on GitHub first (no README, no
-.gitignore). On the first push, Git Credential Manager will open a browser
-window — sign in there instead of typing a password into the terminal.
+This first push uses Git Credential Manager and opens a browser to sign in. The
+`.env` token is used by the daily script from then on.
 
-## 3. Daily commits
+## 4. Daily commits
 
 Two independent options. **Pick one** so you don't get duplicate commits.
 
@@ -64,7 +86,7 @@ run on the same day does nothing.
 
 If you use Option B, delete the workflow file.
 
-## 4. Style your profile
+## 5. Style your profile
 
 The green squares only fill in for commits to a repo GitHub counts as a
 contribution, so keep the repo public (Settings -> General -> Change visibility)
