@@ -126,10 +126,10 @@ ask_me_about:
 
 | Project | Stack | What it does |
 |:--|:--|:--|
-| **Smart Park** | `Flask` `SQLAlchemy` `SQLite` | Parking management with slot tracking |
-| **Netflix-GPT** | `React` `Redux Toolkit` `Firebase` | AI-assisted movie discovery with auth |
-| **DevTinder** | `Node` `Express` `MongoDB` `AWS` `Nginx` | Developer matching, deployed on EC2 |
-| **RoxStar** | `PHP` `CodeIgniter` `Redis` `Socket.IO` | Realtime backend with caching layer |
+| **[Smart Park](https://github.com/Priyasaha7/Smart_Park)** | `Flask` `SQLAlchemy` `SQLite` | Parking management with slot tracking |
+| **[Netflix-GPT](https://github.com/Priyasaha7/Netflix-GPT)** | `React` `Redux Toolkit` `Firebase` | AI-assisted movie discovery with auth |
+| **[DevTinder](https://github.com/Priyasaha7/Dev_Tinder)** | `Node` `Express` `MongoDB` `AWS` `Nginx` | Developer matching, deployed on EC2 |
+| **[DevTinder Web](https://github.com/Priyasaha7/Dev_Tinder_Web)** | `React` `Vite` `Tailwind` | Frontend client for DevTinder |
 
 </div>
 
