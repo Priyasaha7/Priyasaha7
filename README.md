@@ -26,13 +26,14 @@
 
 ```yaml
 name:      Priya Saha
-role:      Developer
-focus:     [automation, web development]
+role:      Full-stack Developer
+focus:     [backend, realtime systems, automation]
 learning:  [system design, clean architecture]
 ask_me_about:
   - JavaScript & TypeScript
-  - Python
-  - Git & GitHub Actions
+  - Python & Flask
+  - PHP & CodeIgniter
+  - Redis, Socket.IO, AWS
 ```
 
 - 🔭 Currently building **automation tooling and web projects**
@@ -44,19 +45,44 @@ ask_me_about:
 
 ## 🛠️ Tech Stack
 
+<!-- skillicons has no slug for socketio/sqlalchemy/codeigniter/retool/composer/
+     jwt (they return an empty 256-byte SVG), so those render as shields badges. -->
+
 <div align="center">
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=js,ts,python,html,css,java,cpp&theme=dark" alt="languages" />
+<img src="https://skillicons.dev/icons?i=js,ts,python,php,html,css,java,cpp&theme=dark" alt="languages" />
 
-**Frameworks & Libraries**
+**Frontend**
 
-<img src="https://skillicons.dev/icons?i=react,nodejs,express,nextjs,tailwind,bootstrap&theme=dark" alt="frameworks" />
+<img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,bootstrap,vite&theme=dark" alt="frontend" />
 
-**Databases & Tools**
+**Backend**
 
-<img src="https://skillicons.dev/icons?i=mysql,mongodb,git,github,githubactions,vscode,postman,linux&theme=dark" alt="tools" />
+<img src="https://skillicons.dev/icons?i=nodejs,express,flask&theme=dark" alt="backend" />
+<br/>
+<img src="https://img.shields.io/badge/Socket.IO-1B1B1B?style=for-the-badge&logo=socketdotio&logoColor=EBBCBA" alt="socket.io" />
+<img src="https://img.shields.io/badge/CodeIgniter-1B1B1B?style=for-the-badge&logo=codeigniter&logoColor=EBBCBA" alt="codeigniter" />
+<img src="https://img.shields.io/badge/REST%20API-1B1B1B?style=for-the-badge&logo=fastapi&logoColor=EBBCBA" alt="rest api" />
+<img src="https://img.shields.io/badge/JWT-1B1B1B?style=for-the-badge&logo=jsonwebtokens&logoColor=EBBCBA" alt="jwt" />
+
+**Databases & Caching**
+
+<img src="https://skillicons.dev/icons?i=mysql,mongodb,sqlite,redis&theme=dark" alt="databases" />
+<br/>
+<img src="https://img.shields.io/badge/SQLAlchemy-1B1B1B?style=for-the-badge&logo=sqlalchemy&logoColor=EBBCBA" alt="sqlalchemy" />
+
+**Cloud & DevOps**
+
+<img src="https://skillicons.dev/icons?i=aws,nginx,githubactions,linux&theme=dark" alt="cloud" />
+
+**Tools & Platforms**
+
+<img src="https://skillicons.dev/icons?i=git,github,postman,vscode,firebase&theme=dark" alt="tools" />
+<br/>
+<img src="https://img.shields.io/badge/Retool-1B1B1B?style=for-the-badge&logo=retool&logoColor=EBBCBA" alt="retool" />
+<img src="https://img.shields.io/badge/Composer-1B1B1B?style=for-the-badge&logo=composer&logoColor=EBBCBA" alt="composer" />
 
 </div>
 
@@ -86,10 +112,41 @@ ask_me_about:
 
 ---
 
+## ⏰ When I Actually Commit
+
+<div align="center">
+  <img width="62%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Priyasaha7&theme=rose_pine&utcOffset=5.5&bg_color=1B1B1B&title_color=EBBCBA&text_color=E3D4D8&border_color=3E2A35&icon_color=EBBCBA&chart_color=6E4B4F" alt="productive time" />
+</div>
+
+---
+
+## 🚀 Featured Projects
+
+<div align="center">
+
+| Project | Stack | What it does |
+|:--|:--|:--|
+| **Smart Park** | `Flask` `SQLAlchemy` `SQLite` | Parking management with slot tracking |
+| **Netflix-GPT** | `React` `Redux Toolkit` `Firebase` | AI-assisted movie discovery with auth |
+| **DevTinder** | `Node` `Express` `MongoDB` `AWS` `Nginx` | Developer matching, deployed on EC2 |
+| **RoxStar** | `PHP` `CodeIgniter` `Redis` `Socket.IO` | Realtime backend with caching layer |
+
+</div>
+
+---
+
 ## 🔥 Streak
 
 <div align="center">
   <img width="62%" src="https://streak-stats.demolab.com?user=Priyasaha7&hide_border=true&border_radius=12&background=191724&ring=EBBCBA&fire=6E4B4F&currStreakLabel=EBBCBA&currStreakNum=F2E9E4&sideLabels=7D6B75&sideNums=F2E9E4&dates=6E6A86" alt="streak" />
+</div>
+
+---
+
+## 🌱 Contribution Grid
+
+<div align="center">
+  <img width="92%" src="https://ghchart.rshah.org/EBBCBA/Priyasaha7" alt="contribution grid" />
 </div>
 
 ---
