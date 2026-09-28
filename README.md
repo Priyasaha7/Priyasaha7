@@ -1,21 +1,23 @@
-<!-- Card sources verified 2026-09-28. github-readme-stats.vercel.app and
-     github-profile-trophy.vercel.app were returning 503/402 (blown Vercel
-     quota), so they are deliberately not used here. -->
+<!-- Palette: Sherwin-Williams "Goth Aesthetic"
+     Tricorn Black #1B1B1B | Blackberry #3E2A35 | River Rouge #6E4B4F
+     Deepest Mauve #4A3540 | Enigma #7D6B75 | accent text #EBBCBA
+     Analytics cards accept preset themes only; rose_pine (#191724 bg,
+     #ebbcba text) is the closest match to these swatches. -->
 
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,40:7B2FF7,70:F72585,100:22D3EE&height=190&section=header&text=Priya%20Saha&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Developer%20%E2%80%A2%20Automation%20%E2%80%A2%20Lifelong%20learner&descAlignY=58&descSize=18" alt="banner" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1B1B1B,35:3E2A35,65:6E4B4F,100:7D6B75&height=190&section=header&text=Priya%20Saha&fontSize=62&fontColor=EBBCBA&animation=fadeIn&fontAlignY=36&desc=Developer%20%E2%80%A2%20Automation%20%E2%80%A2%20Lifelong%20learner&descAlignY=58&descSize=18" alt="banner" />
 </div>
 
 <div align="center">
   <a href="https://github.com/Priyasaha7">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&duration=2800&pause=900&color=22D3EE&background=0D111700&center=true&vCenter=true&width=560&lines=Building+things+with+code;Automating+the+boring+parts;JavaScript+%7C+Python+%7C+Git;Always+shipping+something+new" alt="typing" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&duration=2800&pause=900&color=EBBCBA&background=19172400&center=true&vCenter=true&width=560&lines=Building+things+with+code;Automating+the+boring+parts;JavaScript+%7C+Python+%7C+Git;Always+shipping+something+new" alt="typing" />
   </a>
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Priyasaha7&label=Profile+views&color=22D3EE&style=for-the-badge" alt="views" />
-  <a href="https://github.com/Priyasaha7?tab=followers"><img src="https://img.shields.io/github/followers/Priyasaha7?style=for-the-badge&color=A855F7&labelColor=0D1117" alt="followers" /></a>
-  <a href="https://github.com/Priyasaha7?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/Priyasaha7&query=public_repos&label=Repos&style=for-the-badge&color=F472B6&labelColor=0D1117" alt="repos" /></a>
+  <img src="https://komarev.com/ghpvc/?username=Priyasaha7&label=Profile+views&color=6E4B4F&style=for-the-badge" alt="views" />
+  <a href="https://github.com/Priyasaha7?tab=followers"><img src="https://img.shields.io/github/followers/Priyasaha7?style=for-the-badge&color=3E2A35&labelColor=1B1B1B" alt="followers" /></a>
+  <a href="https://github.com/Priyasaha7?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/Priyasaha7&query=public_repos&label=Repos&style=for-the-badge&color=7D6B75&labelColor=1B1B1B" alt="repos" /></a>
 </div>
 
 <br/>
@@ -64,10 +66,10 @@ ask_me_about:
 
 <div align="center">
 
-<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Priyasaha7&theme=radical" alt="profile details" />
-<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Priyasaha7&theme=radical" alt="stats" />
-<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Priyasaha7&theme=radical" alt="repos per language" />
-<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Priyasaha7&theme=radical" alt="most commit language" />
+<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Priyasaha7&theme=rose_pine" alt="profile details" />
+<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Priyasaha7&theme=rose_pine" alt="stats" />
+<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Priyasaha7&theme=rose_pine" alt="repos per language" />
+<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Priyasaha7&theme=rose_pine" alt="most commit language" />
 
 </div>
 
@@ -76,7 +78,7 @@ ask_me_about:
 ## 🔥 Streak
 
 <div align="center">
-  <img width="62%" src="https://streak-stats.demolab.com?user=Priyasaha7&hide_border=true&border_radius=12&background=0D1117&ring=22D3EE&fire=F472B6&currStreakLabel=22D3EE&currStreakNum=E6EDF3&sideLabels=A855F7&sideNums=E6EDF3&dates=6E7681" alt="streak" />
+  <img width="62%" src="https://streak-stats.demolab.com?user=Priyasaha7&hide_border=true&border_radius=12&background=191724&ring=EBBCBA&fire=6E4B4F&currStreakLabel=EBBCBA&currStreakNum=F2E9E4&sideLabels=7D6B75&sideNums=F2E9E4&dates=6E6A86" alt="streak" />
 </div>
 
 ---
@@ -96,7 +98,7 @@ ask_me_about:
 ## 💡 Dev Quote
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="quote" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=rose_pine" alt="quote" />
 </div>
 
 ---
@@ -105,12 +107,12 @@ ask_me_about:
 
 ### 🤝 Connect
 
-<a href="https://github.com/Priyasaha7"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=22D3EE" alt="github" /></a>
+<a href="https://github.com/Priyasaha7"><img src="https://img.shields.io/badge/GitHub-1B1B1B?style=for-the-badge&logo=github&logoColor=EBBCBA" alt="github" /></a>
 
 <br/><br/>
 
 <sub>⭐ Thanks for stopping by — <a href="https://github.com/Priyasaha7">Priyasaha7</a></sub>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,30:F72585,60:7B2FF7,100:0D1117&height=120&section=footer" alt="footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7D6B75,35:6E4B4F,65:3E2A35,100:1B1B1B&height=120&section=footer" alt="footer" />
 
 </div>

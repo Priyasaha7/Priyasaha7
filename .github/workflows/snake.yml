@@ -25,7 +25,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#22D3EE&color_dots=#161B22,#3B1E54,#7B2FF7,#F72585,#22D3EE
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#EBBCBA&color_dots=#1B1B1B,#3E2A35,#4A3540,#6E4B4F,#7D6B75
 
       # Pushes to a separate 'output' branch so main history stays clean.
       - name: Publish to output branch
