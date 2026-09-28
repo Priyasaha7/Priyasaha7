@@ -15,6 +15,10 @@
 </div>
 
 <div align="center">
+  <img width="360" src="https://raw.githubusercontent.com/Priyasaha7/Priyasaha7/main/assets/confetti.svg" alt="confetti" />
+</div>
+
+<div align="center">
   <img src="https://komarev.com/ghpvc/?username=Priyasaha7&label=Profile+views&color=6E4B4F&style=for-the-badge" alt="views" />
   <a href="https://github.com/Priyasaha7?tab=followers"><img src="https://img.shields.io/github/followers/Priyasaha7?style=for-the-badge&color=3E2A35&labelColor=1B1B1B" alt="followers" /></a>
   <a href="https://github.com/Priyasaha7?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/Priyasaha7&query=public_repos&label=Repos&style=for-the-badge&color=7D6B75&labelColor=1B1B1B" alt="repos" /></a>
@@ -147,10 +151,6 @@ ask_me_about:
 ---
 
 <div align="center">
-
-<!-- Self-hosted so no third-party quota can break it. GitHub strips JS from
-     READMEs, so this is a looping CSS animation, not visit-triggered. -->
-<img width="360" src="https://raw.githubusercontent.com/Priyasaha7/Priyasaha7/main/assets/confetti.svg" alt="confetti" />
 
 ### 🤝 Connect
 
