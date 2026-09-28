@@ -148,6 +148,10 @@ ask_me_about:
 
 <div align="center">
 
+<!-- Self-hosted so no third-party quota can break it. GitHub strips JS from
+     READMEs, so this is a looping CSS animation, not visit-triggered. -->
+<img width="70%" src="https://raw.githubusercontent.com/Priyasaha7/Priyasaha7/main/assets/confetti.svg" alt="confetti" />
+
 ### 🤝 Connect
 
 <a href="https://github.com/Priyasaha7"><img src="https://img.shields.io/badge/GitHub-1B1B1B?style=for-the-badge&logo=github&logoColor=EBBCBA" alt="github" /></a>
