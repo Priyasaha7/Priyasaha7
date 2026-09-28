@@ -1,0 +1,46 @@
+name: Daily activity commit
+
+on:
+  schedule:
+    # 03:30 UTC daily. GitHub may delay scheduled runs during peak load.
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-commit
+  cancel-in-progress: false
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Append today's entry
+        id: entry
+        run: |
+          set -euo pipefail
+          today="$(date -u +%F)"
+          touch activity.md
+          if grep -qF -- "- $today" activity.md; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          printf -- '- %s :: automated check-in\n' "$today" >> activity.md
+          echo "today=$today" >> "$GITHUB_OUTPUT"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        if: steps.entry.outputs.changed == 'true'
+        env:
+          TODAY: ${{ steps.entry.outputs.today }}
+        run: |
+          set -euo pipefail
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- activity.md
+          git commit -m "chore: daily activity log for ${TODAY}"
+          git push
