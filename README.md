@@ -52,37 +52,15 @@ ask_me_about:
 
 <div align="center">
 
-**Languages**
+<img src="https://skillicons.dev/icons?i=js,ts,python,php,html,css,java,cpp,react,nextjs,redux,tailwind,bootstrap,vite,nodejs,express,flask,mysql,mongodb,sqlite,redis,aws,nginx,githubactions,linux,git,github,postman,vscode,firebase&theme=dark&perline=10" alt="tech stack" />
 
-<img src="https://skillicons.dev/icons?i=js,ts,python,php,html,css,java,cpp&theme=dark" alt="languages" />
+<br/><br/>
 
-**Frontend**
-
-<img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,bootstrap,vite&theme=dark" alt="frontend" />
-
-**Backend**
-
-<img src="https://skillicons.dev/icons?i=nodejs,express,flask&theme=dark" alt="backend" />
-<br/>
 <img src="https://img.shields.io/badge/Socket.IO-1B1B1B?style=for-the-badge&logo=socketdotio&logoColor=EBBCBA" alt="socket.io" />
 <img src="https://img.shields.io/badge/CodeIgniter-1B1B1B?style=for-the-badge&logo=codeigniter&logoColor=EBBCBA" alt="codeigniter" />
+<img src="https://img.shields.io/badge/SQLAlchemy-1B1B1B?style=for-the-badge&logo=sqlalchemy&logoColor=EBBCBA" alt="sqlalchemy" />
 <img src="https://img.shields.io/badge/REST%20API-1B1B1B?style=for-the-badge&logo=fastapi&logoColor=EBBCBA" alt="rest api" />
 <img src="https://img.shields.io/badge/JWT-1B1B1B?style=for-the-badge&logo=jsonwebtokens&logoColor=EBBCBA" alt="jwt" />
-
-**Databases & Caching**
-
-<img src="https://skillicons.dev/icons?i=mysql,mongodb,sqlite,redis&theme=dark" alt="databases" />
-<br/>
-<img src="https://img.shields.io/badge/SQLAlchemy-1B1B1B?style=for-the-badge&logo=sqlalchemy&logoColor=EBBCBA" alt="sqlalchemy" />
-
-**Cloud & DevOps**
-
-<img src="https://skillicons.dev/icons?i=aws,nginx,githubactions,linux&theme=dark" alt="cloud" />
-
-**Tools & Platforms**
-
-<img src="https://skillicons.dev/icons?i=git,github,postman,vscode,firebase&theme=dark" alt="tools" />
-<br/>
 <img src="https://img.shields.io/badge/Retool-1B1B1B?style=for-the-badge&logo=retool&logoColor=EBBCBA" alt="retool" />
 <img src="https://img.shields.io/badge/Composer-1B1B1B?style=for-the-badge&logo=composer&logoColor=EBBCBA" alt="composer" />
 
