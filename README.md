@@ -1,110 +1,60 @@
-# Github_Automation
+<h1 align="center">Hi 👋, I'm Priya Saha</h1>
 
-Daily activity commits plus a styled GitHub profile README.
+<p align="center">
+  <a href="https://github.com/Priyasaha7">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=36BCF7&center=true&vCenter=true&width=480&lines=Developer+%7C+Lifelong+learner;Building+things+with+code;Always+shipping+something+new" alt="Typing SVG" />
+  </a>
+</p>
 
-## 1. Rotate your credentials first
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Priyasaha7&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+  <a href="https://github.com/Priyasaha7?tab=followers">
+    <img src="https://img.shields.io/github/followers/Priyasaha7?label=Followers&style=social" alt="Followers" />
+  </a>
+</p>
 
-Your password was exposed in plain text. Before anything else:
+---
 
-1. https://github.com/settings/security -> change password
-2. Enable two-factor authentication
-3. https://github.com/settings/tokens -> revoke anything you don't recognise
+### 🚀 About Me
 
-Nothing in this repo needs your password. GitHub removed password
-authentication for Git operations in August 2021 — an account password will be
-rejected outright. Authentication uses a Personal Access Token.
+- 🔭 Currently working on **automation and web projects**
+- 🌱 Learning **new frameworks and better engineering practices**
+- 💬 Ask me about **JavaScript, Python, Git**
+- 📫 Reach me through my GitHub profile
 
-## 2. Create your .env
+---
 
-```powershell
-Copy-Item .env.example .env
-notepad .env
-```
+### 🛠️ Tech Stack
 
-Get a token at https://github.com/settings/tokens -> **Fine-grained tokens** ->
-*Generate new token*. Scope it to just this repository and grant
-**Contents: Read and write**. Nothing else. Paste it as `GITHUB_TOKEN`.
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=js,ts,python,html,css,react,nodejs,git,github,vscode,mysql,mongodb&theme=dark" alt="Tech stack" />
+</p>
 
-`.env` is gitignored, so it will not be committed. Verify any time with:
+---
 
-```powershell
-git check-ignore -v .env      # prints a .gitignore rule = safely ignored
-```
+### 📊 GitHub Stats
 
-A token is safer than a password: it is scoped to one repo, it expires, and you
-can revoke it without changing your login. If you set an expiry, the daily push
-will start failing when it lapses — check `logs/daily-commit.log` and issue a
-new token.
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Priyasaha7&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Priyasaha7&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
+</p>
 
-## 3. Push this repo
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Priyasaha7&theme=tokyonight&hide_border=true" alt="Streak stats" />
+</p>
 
-The repo is already initialised with a `main` branch and a first commit. Create
-an empty `Github_Automation` repo on GitHub (no README, no .gitignore), then:
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Priyasaha7&theme=tokyo-night&hide_border=true&area=true" alt="Contribution graph" />
+</p>
 
-```powershell
-cd d:\GithubAutomate
-git add .
-git commit -m "feat: token auth via .env"
-git remote add origin https://github.com/Priyasaha7/Github_Automation.git
-git push -u origin main
-```
+---
 
-This first push uses Git Credential Manager and opens a browser to sign in. The
-`.env` token is used by the daily script from then on.
+### 🏆 Trophies
 
-## 4. Daily commits
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Priyasaha7&theme=tokyonight&no-frame=true&column=7&margin-w=10" alt="Trophies" />
+</p>
 
-Two independent options. **Pick one** so you don't get duplicate commits.
+---
 
-### Option A — GitHub Actions (recommended)
-
-[.github/workflows/daily-commit.yml](.github/workflows/daily-commit.yml) runs at
-03:30 UTC daily. No machine needs to be switched on. Trigger a test run from the
-repo's **Actions** tab via *Run workflow*.
-
-Scheduled workflows are paused after 60 days of repository inactivity — the
-daily commit itself counts as activity, so this self-sustains.
-
-### Option B — Windows Task Scheduler
-
-```powershell
-cd d:\GithubAutomate
-.\scripts\daily-commit.ps1 -NoPush     # dry run, keeps commit local
-.\scripts\install-schedule.ps1 -At 09:30
-```
-
-Manage it afterwards:
-
-```powershell
-Start-ScheduledTask       -TaskName GithubDailyCommit
-Get-ScheduledTaskInfo     -TaskName GithubDailyCommit
-Unregister-ScheduledTask  -TaskName GithubDailyCommit -Confirm:$false
-```
-
-Runs are appended to `logs/daily-commit.log`. The script is idempotent: a second
-run on the same day does nothing.
-
-If you use Option B, delete the workflow file.
-
-## 5. Style your profile
-
-The green squares only fill in for commits to a repo GitHub counts as a
-contribution, so keep the repo public (Settings -> General -> Change visibility)
-or enable *Include private contributions* under
-https://github.com/settings/profile.
-
-To install the profile README:
-
-1. Create a **public** repo named exactly `Priyasaha7` — GitHub shows a special
-   "you found a secret" banner when the name matches your username
-2. Copy [profile-readme/README.md](profile-readme/README.md) into it as `README.md`
-3. Commit and push — it renders at the top of your profile
-
-Also worth doing on https://github.com/settings/profile: add a bio, location,
-and profile picture. Then pin your best 6 repos from your profile page.
-
-## A note on artificial activity
-
-These commits are real commits to a real repo, but they are not real work.
-Recruiters look at project quality far more than square colour. Treat the
-streak as a habit tracker, not a portfolio.
+<p align="center"><i>⭐ From <a href="https://github.com/Priyasaha7">Priyasaha7</a></i></p>
