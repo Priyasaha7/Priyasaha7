@@ -64,24 +64,23 @@ ask_me_about:
 
 ## 📊 GitHub Analytics
 
-<!-- github-profile-summary-cards returns HTTP 200 with an "ERROR!!! Cards are
-     temporarily rate limited" SVG body, so only its language donut is kept
-     (it degrades least). Headline numbers come from shields.io, which is not
-     quota limited. -->
+<!-- Exact palette via per-card hex overrides (title_color/text_color/bg_color/
+     border_color/icon_color/chart_color) rather than a preset theme.
+     Language donut slice colours are fixed per-language by the service and
+     cannot be themed. -->
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPriyasaha7&query=%24.public_repos&label=PUBLIC%20REPOS&style=for-the-badge&color=6E4B4F&labelColor=1B1B1B" alt="repos" />
-<img src="https://img.shields.io/github/followers/Priyasaha7?label=FOLLOWERS&style=for-the-badge&color=3E2A35&labelColor=1B1B1B" alt="followers" />
-<img src="https://img.shields.io/github/stars/Priyasaha7?affiliations=OWNER&label=TOTAL%20STARS&style=for-the-badge&color=7D6B75&labelColor=1B1B1B" alt="stars" />
-
-<img src="https://img.shields.io/github/commit-activity/t/Priyasaha7/Priyasaha7?label=COMMITS%20HERE&style=for-the-badge&color=4A3540&labelColor=1B1B1B" alt="commits" />
-<img src="https://img.shields.io/github/last-commit/Priyasaha7/Priyasaha7?label=LAST%20COMMIT&style=for-the-badge&color=6E4B4F&labelColor=1B1B1B" alt="last commit" />
-<img src="https://img.shields.io/github/languages/count/Priyasaha7/Priyasaha7?label=LANGUAGES&style=for-the-badge&color=3E2A35&labelColor=1B1B1B" alt="language count" />
+<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Priyasaha7&theme=rose_pine&bg_color=1B1B1B&title_color=EBBCBA&text_color=E3D4D8&border_color=3E2A35&icon_color=EBBCBA&chart_color=6E4B4F" alt="profile details" />
+<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Priyasaha7&theme=rose_pine&bg_color=1B1B1B&title_color=EBBCBA&text_color=E3D4D8&border_color=3E2A35&icon_color=EBBCBA&chart_color=6E4B4F" alt="stats" />
+<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Priyasaha7&theme=rose_pine&bg_color=1B1B1B&title_color=EBBCBA&text_color=E3D4D8&border_color=3E2A35&icon_color=EBBCBA&chart_color=6E4B4F" alt="repos per language" />
+<img width="49.5%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Priyasaha7&theme=rose_pine&bg_color=1B1B1B&title_color=EBBCBA&text_color=E3D4D8&border_color=3E2A35&icon_color=EBBCBA&chart_color=6E4B4F" alt="most commit language" />
 
 <br/><br/>
 
-<img width="62%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Priyasaha7&theme=rose_pine" alt="repos per language" />
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FPriyasaha7&query=%24.public_repos&label=PUBLIC%20REPOS&style=for-the-badge&color=6E4B4F&labelColor=1B1B1B" alt="repos" />
+<img src="https://img.shields.io/github/last-commit/Priyasaha7/Priyasaha7?label=LAST%20COMMIT&style=for-the-badge&color=3E2A35&labelColor=1B1B1B" alt="last commit" />
+<img src="https://img.shields.io/github/languages/count/Priyasaha7/Priyasaha7?label=LANGUAGES&style=for-the-badge&color=7D6B75&labelColor=1B1B1B" alt="language count" />
 
 </div>
 
