@@ -70,8 +70,6 @@ ask_me_about:
 <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Priyasaha7&theme=github_dark" alt="repos per language" />
 <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Priyasaha7&theme=github_dark" alt="most commit language" />
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Priyasaha7&theme=github_dark&utcOffset=5.5" alt="productive time" />
-
 </div>
 
 ---
