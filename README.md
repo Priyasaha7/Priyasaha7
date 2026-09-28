@@ -172,8 +172,6 @@ ask_me_about:
 
 <a href="https://github.com/Priyasaha7"><img src="https://img.shields.io/badge/GitHub-1B1B1B?style=for-the-badge&logo=github&logoColor=EBBCBA" alt="github" /></a>
 
-<br/><br/>
-
 <sub>⭐ Thanks for stopping by — <a href="https://github.com/Priyasaha7">Priyasaha7</a></sub>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7D6B75,35:6E4B4F,65:3E2A35,100:1B1B1B&height=120&section=footer" alt="footer" />
