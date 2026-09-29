@@ -15,10 +15,6 @@
 </div>
 
 <div align="center">
-  <img width="360" src="https://raw.githubusercontent.com/Priyasaha7/Priyasaha7/main/assets/confetti.svg" alt="confetti" />
-</div>
-
-<div align="center">
   <img src="https://komarev.com/ghpvc/?username=Priyasaha7&label=Profile+views&color=6E4B4F&style=for-the-badge" alt="views" />
   <a href="https://github.com/Priyasaha7?tab=followers"><img src="https://img.shields.io/github/followers/Priyasaha7?style=for-the-badge&color=3E2A35&labelColor=1B1B1B" alt="followers" /></a>
   <a href="https://github.com/Priyasaha7?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/Priyasaha7&query=public_repos&label=Repos&style=for-the-badge&color=7D6B75&labelColor=1B1B1B" alt="repos" /></a>
@@ -152,13 +148,14 @@ ask_me_about:
 
 <div align="center">
 
-### 🤝 Connect
+<!-- Heading is baked INTO the SVG so the confetti falls across the wording.
+     Markdown stacks images vertically and GitHub strips CSS positioning, so a
+     real overlay is not possible with separate elements. -->
+<img width="58%" src="https://raw.githubusercontent.com/Priyasaha7/Priyasaha7/main/assets/connect-confetti.svg" alt="Connect" />
 
 <a href="https://github.com/Priyasaha7"><img src="https://img.shields.io/badge/GitHub-1B1B1B?style=for-the-badge&logo=github&logoColor=EBBCBA" alt="github" /></a>
 <a href="https://priyasaha.in"><img src="https://img.shields.io/badge/Website-1B1B1B?style=for-the-badge&logo=googlechrome&logoColor=EBBCBA" alt="website" /></a>
 <a href="mailto:priyasaha4658000@gmail.com"><img src="https://img.shields.io/badge/Email-1B1B1B?style=for-the-badge&logo=gmail&logoColor=EBBCBA" alt="email" /></a>
-
-<sub>⭐ Thanks for stopping by — <a href="https://github.com/Priyasaha7">Priyasaha7</a></sub>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7D6B75,35:6E4B4F,65:3E2A35,100:1B1B1B&height=120&section=footer" alt="footer" />
 
